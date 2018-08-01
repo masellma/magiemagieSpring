@@ -1,0 +1,532 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset CSS*/
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	font-family: 'Markazi Text', serif;
+}
+nav{
+	width: 100%;
+	height: 100px;
+	background-image: url(../img/bgnav.jpg);
+	background-size: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+header img{
+	width: 100%;
+	position: relative;
+	top: -30px;
+}
+section{
+	width: 100%;
+	background-size: 100%;
+}
+h1{
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
+	font-size: 50pt;
+	text-align: center;
+	
+	background-color: rgba(0,0,0,0.5);
+
+
+}
+h2{
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+	color: white;
+	font-size: 30pt;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+}
+h4{
+	font-size: 18pt;
+	font-family: 'Kaushan Script', cursive;
+	padding: 10px;
+	text-align: center;
+}
+h5{
+	font-size: 16pt;
+	font-family: 'Kaushan Script', cursive;
+	padding-bottom: 10px;
+	text-align: center;
+}
+h6{
+	font-size: 16pt;
+	font-family: 'Kaushan Script', cursive;
+	padding-left: 10px;	
+}
+a{
+	text-decoration: none;
+}
+form{
+	width: 50%;
+	margin: 50px 25%;
+}
+form label{
+	color: white;
+	text-shadow: -1px 0 rgb(51,51,51), 0 1px rgb(51,51,51), 1px 0 rgb(51,51,51), 0 -1px rgb(51,51,51);
+	font-size: 20pt;
+	display: block;
+
+}
+form input{
+	border-radius: .75em;
+	border: 2px solid rgb(51,51,51);
+	background-color: white;
+	padding: 10px;
+	width: 70%;
+	font-size: 16pt;
+}
+button.btn1{
+	font-size: 16pt;
+	color: rgb(162,121,13);
+	border: 1px solid rgb(162,121,13);
+	background-color: rgb(51,51,51);
+	border-radius: 1em;
+	padding:10px 20px;
+	margin-left: 4%;
+	cursor: pointer;
+
+}
+button.btn2{
+	font-size: 16pt;
+	color: rgb(162,121,13);
+	border: 2px solid rgb(162,121,13);
+	background-color: rgb(51,51,51);
+	border-radius: 1em;
+	cursor: pointer;
+	width: 33%;
+	padding:10px 20px;
+	margin:2vh 33% 2vh 33%;
+
+}
+.btn2:hover{
+	color: rgb(51,51,51);
+	background-color: rgb(162,121,13);
+}
+
+.imgCartes{
+	width: 60%;
+	margin: 0 20%;
+}
+.imgCarteslogin{
+	width: 60%;
+	margin: 0 20%;
+}
+.imgCartes:hover{
+	border: 3px red solid;
+	border-radius: .75em;
+	margin-top: -3px;
+	position: relative;
+	left: -3px;
+	cursor: pointer;
+}
+.col25{
+	display: inline-block;
+	width: 25%;
+	margin-right: -2px;
+}
+.float{
+	float: left;
+}
+.inactiveGame{
+	padding: 5px;
+	border-top:5px;
+	border-bottom: 5px;
+	border-color: /*rgb(162,121,13);*/rgb(162,121,13);
+	border-style: solid;
+
+	border-radius: 1.25em;
+	width: 15%;
+	height: 250px;
+	margin: 50px 4.5%;
+	background-color: rgba(255,255,255,0.7);
+	position: relative;
+	display: inline-block;
+}
+.inactiveGame ul{
+	text-align: center;
+	font-size: 14pt;
+	padding: 10px 0;
+
+}
+.inactiveGame span{
+	display: block;
+	font-size: 18pt;
+	margin: 25px 0 0 0;
+	padding: 5px 0;
+	text-align: center;
+	color: rgb(162,121,13);
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 1em;
+	cursor: pointer;
+
+}
+.labelSelect{
+	border: 2px solid red;
+	border-radius: 0.25em;
+	transform: translate(-2px,-2px);
+}
+
+#home{
+	padding-top: 50px;
+	position: relative;
+	height: 100%;
+	background: url(../img/backgroundFinal.png) center 0 no-repeat fixed;
+
+}
+#second{
+	background: url(../img/bgnav.jpg) center 0 no-repeat fixed;
+	background-size: 100%;
+	height: 455px;
+}
+#second article{
+	width: 80%;
+	margin: 50px 10%;
+}
+#third{
+	height: 100%;
+	background: url(../img/bgnav.jpg) center 0 no-repeat fixed;
+	background-size: 100%;
+}
+#third article{
+	width: 80%;
+	margin: 50px 10%;
+}
+#connexion{
+	position: fixed; z-index: 100; width: 100vw; height: 100vh;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+#connexion h3{
+	border-radius: 0.25em 0.25em 0 0 ;
+	margin-bottom: 2vw;
+	padding: 1vh 0;
+	display: inline-block;
+	background-color: transparent;
+	width: 80%;
+	margin-left: 10%;
+
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+	color: white;
+	font-size: 30pt;
+	text-align: center;
+}
+#connexion form{
+	border: 1px solid rgb(162,121,13);
+	border-radius: 0.75em;
+	background-color: rgba(51,51,51,0.75);
+}
+#container-lobby{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: url(../img/loobyBg.jpg) center no-repeat;
+	background-size: 100%;
+}
+#lobby{
+	display: flex;
+	height: 300px;
+	width: 100%;
+	justify-content: space-around;
+	background-color: rgba(51,51,51,0.5);
+}
+#lobby img{
+    width: 150px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15pt;
+    padding: 10px 0;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    margin: 10px 0;
+}
+#container-lobby form p{
+	background-color: rgb(255,255,255);
+	border:solid black 1px;
+	padding: 5px;
+	overflow-y: scroll;
+	height: 20vh;
+	margin-bottom: 0.1vh;
+	border-radius:  0.5em 0.5em 0 0 ;
+
+}
+.formItem{
+	margin-left: 5vw;
+	margin-bottom: 3vw;
+}
+#connexion form label{
+cursor: pointer;
+}
+#header{
+	width: 70%;
+	height: 10vh;
+	margin: 0 15%;
+}
+#header img{
+	height: 300%;
+	position: relative;
+	transform: translate(30%, -10vh);float: left;
+}
+#PlateauDejeu{
+	background: url(../img/loobyBg.jpg) center no-repeat;
+	background-size: 100%;
+	height: 100%;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 60%;
+	background-color: white;
+	height: 100%;
+	border-radius: 0 0.5em 0.5em 0;
+
+}
+#nav a{
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 15pt;
+	padding: 5px;
+
+}
+#nav a:hover{
+	border-bottom: 2px double black;
+}
+#cross{
+	cursor: pointer;
+}
+#ennemiBoard{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 45vh;
+	padding: 15px;
+}
+.ennemiItem{
+	max-height: 100%;
+	background-color: rgba(255,239,213,0.9);
+	border-radius: 0.5em;
+	width: 15%;
+	text-align: center;
+}
+#cardHand{
+	display: flex;
+	width: 70%;
+
+
+}
+#cardHand input{
+	visibility: hidden;
+}
+.CardItem{
+	transition: 0.5s;
+
+}
+.CardItem:hover{
+	z-index: 1;
+
+}
+.CardItem img:hover{
+	-webkit-box-shadow: 0px 0px 50px 5px rgba(166,124,0,1);
+	-moz-box-shadow: 0px 0px 50px 5px rgba(166,124,0,1);
+	box-shadow: 0px 0px 50px 5px rgba(166,124,0,1);
+
+}
+#PlayerBoard{
+	display: flex;
+	width: 100%;
+}
+#Player{
+	width: 20%;
+	text-align: center;
+	background-color: rgba(255,239,213,0.9);
+	border-radius: 0.5em;
+	margin-right: 1%;
+}
+#Player h5{
+	background-color: rgb(51,51,51);
+	color:papayawhip;
+	padding-top: 10px;
+}
+#Player img{
+	width: 200px;
+	margin: auto;
+}
+#actionItem{
+	width: 20%;
+	margin-left: 10%;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#actionItem span{
+	width: 80%;
+}
+.selected{
+	transition: 0.5s;
+	transform: translateY(-10vh);
+}
+.deselected{
+	transition: 0.5s;
+}
+#PlayerHand{
+	width: 80%;
+	display: flex;
+	align-items: flex-end;
+}
+#PlayerHand form{
+	margin: 0;
+	display: flex;	
+	width: 100%;
+	
+}
+#locked{
+	position: absolute;
+	width: 100%;
+	display: flex;
+	height: 100%;
+	background-color: rgba(51,51,51,0.7);
+	justify-content: center;
+	align-items: center;
+}
+
+#lancerSort{
+	display: none;
+}
+.CardItem img{
+	width: 150px;
+	cursor: pointer;
+}
+.ennemiItem img{
+	height: 75%;
+}
+.ennemiItem h5{
+	padding: 10px 0;
+	background-color: rgb(51,51,51);
+	color:papayawhip;
+}
+.ennemiItem span{
+	width: 100%;
+	display: block;
+	border-radius: 0 0 0.5em 0.5em;
+	background-color: papayawhip;
+	padding: 10px 0;
+}
+.ALaMain{
+	-webkit-box-shadow: 0px 0px 50px 5px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 0px 50px 5px rgba(255,255,255,1);
+	box-shadow: 0px 0px 50px 5px rgba(255,255,255,1);
+}
+#help{
+	z-index: 10;
+	display: flex;
+	width: 4%;
+	height: 100%;
+	align-items: center;
+	position: fixed;
+	right: 0;
+	transition: 0.5s;
+	text-align: center;
+	overflow: hidden;
+}
+#help h3{
+	font-size: 18pt;
+	color: papayawhip;
+
+}
+.helpItems img{
+
+	width: 75px;
+	margin: 0 10px;
+}
+#helpContent{
+	transition: 0.5s;
+	height: 100%;
+	min-width: 250px;
+	background-color: rgb(51,51,51);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
+}
+#helpIcon{
+	display: flex;
+	padding: 5vh 15px;
+	border-radius: 0.5em 0 0 0.5em;
+	background-color: rgb(51,51,51);
+	cursor: pointer;
+}
+#helpIcon img{
+	width: 35px;
+	height: 35px;
+	
+}
