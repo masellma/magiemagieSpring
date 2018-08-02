@@ -6,6 +6,7 @@
 package atos.magiemagie.service;
 
 import atos.magiemagie.dao.CarteDAO;
+import atos.magiemagie.dao.CarteDAOCrud;
 import atos.magiemagie.dao.JoueurDAO;
 import atos.magiemagie.dao.PartieDAO;
 import atos.magiemagie.entity.Carte;
@@ -18,6 +19,7 @@ import java.util.Scanner;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  *
@@ -25,6 +27,8 @@ import javax.persistence.Query;
  */
 public class CarteService {
     
+    @Autowired
+    private CarteDAOCrud carteDaoCrud;
     private CarteDAO carteDAO = new CarteDAO();
     private JoueurDAO joueurDAO = new JoueurDAO();
     private PartieDAO PartieDAO = new PartieDAO();
@@ -48,7 +52,7 @@ public class CarteService {
                    
                     carte.setTypeCarte(ingredient[random]);
                     carte.setJoueur(joueur);
-                    carteDAO.addCarte(carte);
+                    carteDaoCrud.save(carte);
                     return carte;
                     
     }

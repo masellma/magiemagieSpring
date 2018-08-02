@@ -7,6 +7,7 @@ package atos.magiemagie.dao;
 
 import atos.magiemagie.entity.Joueur;
 import atos.magiemagie.entity.Partie;
+import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 
 /**
@@ -16,4 +17,8 @@ import org.springframework.data.repository.CrudRepository;
 public interface JoueurDAOCrud extends CrudRepository<Joueur, Long>{
     
     public Joueur findOneByOrdreAndPartie(Long l, Partie p);
+
+    public List<Joueur> findAllByPartieId(Long idPartie);
+
+    public Joueur findOneByEtatJoueurAndPartieId(Joueur.EtatJoueur etatJoueur, Long idPartie);
 }

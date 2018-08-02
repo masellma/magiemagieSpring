@@ -57,9 +57,10 @@ public class PartieService {
         } else {
             //Change l'état du joueur 
             Joueur joueur1 = joueurDaoCrud.findOneByOrdreAndPartie(1L, p);
-//            Joueur joueur1 = JoueurDAO.rechercherParOrdre(1L, p.getId());
+            
             joueur1.setEtatJoueur(Joueur.EtatJoueur.A_LA_MAIN);
             JoueurDAO.modifier(joueur1);
+            joueurDaoCrud.save(joueur1);
             
             List<Joueur> joueursPartie = p.getJoueurs();
             
@@ -76,11 +77,14 @@ public class PartieService {
     }
 
     public List<Joueur> getJoueurs(Long idPartie) {
-        return dao.getJoueurPartie(idPartie);
+        return joueurDaoCrud.findAllByPartieId(idPartie);
+//        return dao.getJoueurPartie(idPartie);
+        
         
     }
     public Joueur joueurALaMain(Long idPartie) {
-       return dao.JoueurALaMain(idPartie);
+//       return dao.JoueurALaMain(idPartie);
+       return joueurDaoCrud.findOneByEtatJoueurAndPartieId(atos.magiemagie.entity.Joueur.EtatJoueur.A_LA_MAIN, idPartie);
     }
 
     
